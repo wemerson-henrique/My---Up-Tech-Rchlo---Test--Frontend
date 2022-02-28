@@ -1,0 +1,40 @@
+.cabecalho{
+    background-color: rgb(3, 3, 182);
+    padding: 70px;
+    padding-left: 13%;
+}
+.tituloJanela{
+    font-weight: 700;
+    font-size: 60px;
+}
+.card .card-header{
+    background-color: cornflowerblue;
+}
+.titulo{
+    font-weight: 700;
+    padding-top: 10px;
+}
+.titulo:nth-child(1){
+    padding-top: 0px;
+}
+fieldset{
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+fieldset:nth-child(1){
+    padding-bottom: 0px;
+}
+legend{
+    color: #000;
+    font-weight: 500;
+}
+.invalid{
+    border: red solid 2px;
+}
+
+@include media-breakpoint-up(sm) {
+    fieldset{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
