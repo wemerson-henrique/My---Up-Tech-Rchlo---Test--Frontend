@@ -3,7 +3,7 @@ inputName.addEventListener("keypress",function(e) {
     const keyCode = (e.keyCode ? e.keyCode : e.wich);
     var quantidadeProduto = document.getElementById('quantidadeProduto').value;
     var quantidade = quantidadeProduto.toString().length;
-    if (keyCode < 48 || keyCode > 57 || quantidade > 1) {
+    if ((keyCode < 48 || keyCode > 57) || quantidade > 1) {
         e.preventDefault();
     }
     
